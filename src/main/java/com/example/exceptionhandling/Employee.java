@@ -1,9 +1,16 @@
 package com.example.exceptionhandling;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
 public class Employee {
 
 	private Long id ; 
+	
+	@NotBlank
 	private String name ;
+
+	@NotNull
 	private Double salary ;
 	public Long getId() {
 		return id;
